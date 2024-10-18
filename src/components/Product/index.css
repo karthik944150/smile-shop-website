@@ -1,0 +1,192 @@
+.product-container{
+    display: flex; 
+    flex-direction: column; 
+    padding: 5px;
+   
+    background-image: linear-gradient(to bottom, rgb(230, 184, 248), rgb(159, 218, 243));
+}
+
+.product-main-header-container{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;  
+}
+.product-main-header{
+    font-family: "Roboto"; 
+    color: #000; 
+    font-weight: 700;
+
+}
+.product-main-description{
+    max-width: 550px;
+    color: #000; 
+    text-align: center;
+}
+
+.product-list{
+    display: flex; 
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-top: 50px;
+}
+
+/* filter-section */
+
+.filter-container{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width:768px){
+    .filter-container{
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.search-bar-container{
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  background-color: transparent;
+  border: solid 2px #85baf7; 
+  border-radius: 5px;
+  padding: 10px;
+  width: 90%;
+  color: #4a90e2;
+}
+
+@media screen and (min-width:768px){
+  .search-bar-container{
+      width: 25%;
+  }
+}
+
+.input-element{
+  background-color: transparent;
+  border: none; 
+  outline: none;
+}
+
+/* category-button */
+
+.option-button {
+  background-color: transparent;
+  color: #333;
+  border: 2px solid #85baf7;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 13px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.active-option-button {
+  background-color: #4a90e2;
+  color: #fff;
+}
+.option-button:hover {
+  background-color: #4a90e2;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.option-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px 2px rgba(74, 144, 226, 0.6);
+}
+
+.option-button:active {
+  background-color: #357ab7;
+  border-color: #357ab7;
+}
+/* loader */
+
+.loader-container{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    color: #0284c7;
+}
+
+/* failure-view */ 
+
+.top-rated-books-failure-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .top-rated-books-failure-image {
+    width: 100%;
+  }
+  
+  .top-rated-books-failure-heading {
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: #475569;
+    text-align: center;
+  }
+  
+  .top-rated-books-failure-btn {
+    background-color: #0284c7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .top-rated-books-failure-btn:hover {
+    background-color: #0369a1;
+  }
+  @media screen and (min-width: 768px) {
+    .top-rated-books-failure-image {
+      width: 50%;
+    }
+    .top-rated-books-failure-heading {
+      font-size: 24px;
+    }
+  }
+  
+  /* no-match-products */
+
+  .no-match-found-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .no-match-image {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .no-match-paragraph {
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: #475569;
+    text-align: center;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .no-match-image {
+      width: 50%;
+    }
+    .no-match-paragraph {
+      font-size: 24px;
+    }
+  }
+  

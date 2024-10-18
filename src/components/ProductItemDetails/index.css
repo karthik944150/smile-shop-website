@@ -1,0 +1,135 @@
+.product-item-details-container{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgb(159, 218, 243), rgb(203, 150, 224));
+}
+
+/* product-item-details */
+
+.product-detail-item {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    background-color: #fff;
+    max-width: 950px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .product-detail-item {
+      flex-direction: row;
+    }
+  }
+  
+  .product-detail-item-image {
+    align-self: center;
+    width: 30%;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .product-detail-item-image {
+      align-self: flex-start;
+    }
+  }
+  
+  .product-item-each-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
+@media screen and (min-width: 768px) {
+    .product-item-each-details{
+        align-items: center;
+    }
+}
+  .product-detail-item-title {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    color: #0a0a0a;
+    margin-bottom: 10px;
+  }
+  
+  .product-detail-item-description {
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    color: black;
+    margin-bottom: 10px;
+  }
+  
+  .product-item-category {
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 5px;
+  }
+  
+  .product-category-price {
+    font-size: 14px;
+    font-weight: 400;
+    color: #0284c7;
+  }
+  
+  .rating-star {
+    color: gold;
+    margin-right: 5px;
+  }
+  
+/* loader */
+
+.loader-container{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    color: #0284c7;
+}
+
+/* failure-view */ 
+
+.top-rated-books-failure-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .top-rated-books-failure-image {
+    width: 100%;
+  }
+  
+  .top-rated-books-failure-heading {
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: #475569;
+    text-align: center;
+  }
+  
+  .top-rated-books-failure-btn {
+    background-color: #0284c7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .top-rated-books-failure-btn:hover {
+    background-color: #0369a1;
+  }
+  @media screen and (min-width: 768px) {
+    .top-rated-books-failure-image {
+      width: 50%;
+    }
+    .top-rated-books-failure-heading {
+      font-size: 24px;
+    }
+  }
+  
