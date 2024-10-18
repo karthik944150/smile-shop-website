@@ -21,7 +21,7 @@
 
 .nav-bar div {
     display: flex;
-    gap: 15px; /* Spacing between icons */
+    gap: 15px; 
 }
 
 .nav-bar h1 {
@@ -53,7 +53,7 @@ ul li {
 }
 
 ul li:hover {
-    color: #007bff; /* Hover effect */
+    color: #007bff; 
     text-decoration: underline;
 }
 

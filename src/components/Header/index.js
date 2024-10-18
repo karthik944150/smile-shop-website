@@ -19,7 +19,7 @@ const Header = () => {
                     Home
                 </li>
             </Link>
-            <Link to = "/products" className="link-item">
+            <Link to = "/product" className="link-item">
                 <li className="link-name">
                     Products
                 </li>
