@@ -206,7 +206,7 @@ class Product extends Component {
                     />
                     <IoIosSearch size = {25}/>
                     </div>
-                   <ul>
+                   <ul className="option-button-container">
                     {productCategoryList.map(eachCategory => {
                         const activeCategoryButton = `option-button ${activeCategoryId === eachCategory.value ? "active-option-button" : ''}`
                         return (
